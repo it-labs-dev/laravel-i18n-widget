@@ -12,10 +12,10 @@
     <ul>
         @foreach($urls as $locale => $url)
             <li>
-                <a class="b-dropdown__item b-dropdown__item--link" href="{{ $url }}">
+                <a href="{{ $url }}">
                     {{ ucfirst($locale) }}
                 </a>
             </li>
         @endforeach
-    </div>
+    </ul>
 </div>
