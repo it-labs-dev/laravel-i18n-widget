@@ -7,7 +7,10 @@
     "autoload": {
         "psr-4": {
             "ItLabs\\Widgets\\I18n\\": "src/"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
