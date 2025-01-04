@@ -1,0 +1,46 @@
+{
+    "name": "it-labs/laravel-i18n-widget",
+    "description": "Menu widget for laravel",
+    "keywords": ["laravel"],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ItLabs\\Widgets\\I18n\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ItLabs\\Widgets\\I18n\\Test\\": "tests"
+        }
+    },
+    "authors": [
+        {
+            "name": "Igor Tkachenko"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4",
+        "laravel/framework": ">=9",
+        "illuminate/support": ">=9",
+        "illuminate/view": ">=9",
+        "arrilot/laravel-widgets": "*",
+        "spatie/url": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8.0",
+        "nunomaduro/larastan": "^2.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ItLabs\\Widgets\\I18n\\ServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "phpunit"
+    }
+}
