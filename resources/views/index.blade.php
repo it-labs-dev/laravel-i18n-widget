@@ -3,6 +3,7 @@
      * @var string $currentLocale
      * @var array $urls
      * @var array $classes
+     * @var string $itemView
      */
 @endphp
 <div @class($classes)>
@@ -10,12 +11,8 @@
         {{ ucfirst($currentLocale) }}
     </span>
     <ul>
-        @foreach($urls as $locale => $url)
-            <li>
-                <a href="{{ $url }}">
-                    {{ ucfirst($locale) }}
-                </a>
-            </li>
+        @foreach($urls as $locale)
+            @include($itemView, $locale)
         @endforeach
     </ul>
 </div>
