@@ -7,7 +7,7 @@
      */
 @endphp
 <li @class(['is-active' => $isActive])>
-    <a href="{{ $url }}">
+    <a href="{{ $href }}">
         {{ $name }}
     </a>
 </li>

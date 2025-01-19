@@ -81,9 +81,10 @@ class Locales extends AbstractWidget
 
     protected function buildName(string $locale): string
     {
-        $name = __('locales.' . $locale);
+        $key = 'locales.' . $locale;
+        $name = __($key);
 
-        if(!$name){
+        if(!$name || $key === $name){
             $name = ucfirst($locale);
         }
 
