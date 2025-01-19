@@ -57,10 +57,6 @@ class Locales extends AbstractWidget
         foreach ($this->localeStatement->getList() as $locale){
             $segments = $currentSegments;
 
-            if($locale === $currentLocale){
-                continue;
-            }
-
             if($locale === $defaultLocale){
                 unset($segments[0]);
             }
