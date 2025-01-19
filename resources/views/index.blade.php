@@ -1,7 +1,7 @@
 @php
     /**
      * @var string $currentLocale
-     * @var array $urls
+     * @var array $locales
      * @var array $classes
      * @var string $itemView
      */
@@ -11,7 +11,7 @@
         {{ ucfirst($currentLocale) }}
     </span>
     <ul>
-        @foreach($urls as $locale)
+        @foreach($locales as $locale)
             @include($itemView, $locale)
         @endforeach
     </ul>
